@@ -1,0 +1,5 @@
+msg=input("Tell me a sentence/word and I will tell you how many characters are in it. \n")
+length=(len(msg))
+print ("this text has...")
+print(length)
+print("characters")
