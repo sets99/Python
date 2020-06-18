@@ -1,0 +1,5 @@
+start=input("I am going to give you something to type, and I will then tell you your typing speed. Click enter to continue. \n")
+import random
+list=("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
+typingword=random.choices(list)
+print(typingword)
