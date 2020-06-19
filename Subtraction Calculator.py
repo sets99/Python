@@ -1,0 +1,5 @@
+a=input("What is the first term of your subraction problem? \n")
+b=input("What is the second term of your subtraction problem? \n")
+print ("The difference of these two numbers is...")
+difference=float(a) - float(b)
+print (difference)
