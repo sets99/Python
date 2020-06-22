@@ -4,7 +4,8 @@ lengthofpasswords = int(input("How many characters?"))
 print("\nHere are your passwords:")
 
 password = ""
-for x in range(lengthofpassword):
+for x in range(lengthofpasswords):
    password = password + random.choice(characters)
 
 print (password)
+
