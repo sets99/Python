@@ -1,8 +1,15 @@
 import random
-print ("Tell me your two options and I will tell you which one to do.") 
-a=input("What is your first option? \n")
-b=input("What is your second option? \n")
-listOfChoices = [a, b]
-choice = random.choice(listOfChoices)
-reply = ("Go for ") + choice
-print (reply)
+
+print ("Have trouble making a choice? Don't worry we can help you out.")
+print("\n")
+
+numberofitems=int(input("How many options do you have?"))
+print("OK, enter your choices now one by one and hit enter")
+
+listItems = []
+
+for x in range (numberofitems):
+  listItems.append(input(""))
+
+chosenItem = random.choice(listItems)
+print("I think that you should go with: " + chosenItem)
