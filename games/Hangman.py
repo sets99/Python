@@ -8,7 +8,7 @@ if file.mode == "r":
 
 word = random.choice(read).rstrip()
 
-word = "me"
+#word = "me"
 
 name=input("Hi! What's your name?")
 time.sleep(0.5)
@@ -18,22 +18,24 @@ time.sleep(1.3)
 
 print("Ok! I've chosen a %d letter word." %(len(word)))
 
-blanks = ""
+tracker = []
 dict = {}
 
 for i in range(0, len(word)):
-  blanks = blanks + "___ "
-  dict[word[i]] = i
-  
+  dict[word[i]] = []
 
-print ('\n' + blanks + '\n')
+for i in range(0, len(word)):
+  tracker.append("___")
+  dict[word[i]].append(i)
 
 
 for x in range(30): 
+  print(' '.join(tracker) + "\n")
   guess = input("Guess a letter.")
   if guess in word:
-    print("\nGood")
-    dict.pop(guess)
+    print("\nGood Job!")
+    position = dict.pop(guess)
+    tracker[position] = guess
     if len(dict) == 0: 
       print("You won! The word was " + word)
       break
@@ -43,3 +45,4 @@ for x in range(30):
   
 else: 
   print("You lost... The word was " + word + ".") 
+ 
