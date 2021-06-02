@@ -8,6 +8,7 @@ Hello! I'm in 7th grade and I'm currently doing the following during summer brea
 - Alcumus
 - AMC 10 mock tests
 - More mock tests
+- "The Fundamentals of Physics" by HRW
 - Python programming
     - Project Euler
     - Make PyGames
