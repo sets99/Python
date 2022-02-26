@@ -1,5 +1,5 @@
 print ("You probably always been keen to learn more about yourself...")
-name=input("What is your name?. Answer in the form: Saksham Sethi \n")
+name=input("What is your name?. Answer in the form: John Doe \n")
 birth=input("What month number were you born in? Answer in the form: 3 \n")
 if birth == "1":  
   print ("You always stay calm, and usually don't get angry even after frustrating moments.")
